@@ -1,20 +1,13 @@
-'use client'
-import { useEffect, useState } from 'react';
+// app/page.tsx
+import SignInButton from "./components/SignInButton";
+import UserProfile from "./components/UserProfile";
 
 const HomePage = () => {
-  const [message, setMessage] = useState<string | null>(null);
-
-  useEffect(() => {
-    fetch('http://localhost:4000/api')
-      .then(response => response.json())
-      .then(data => setMessage(data.message))
-      .catch(error => console.error('Error fetching API:', error));
-  }, []);
-
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold">Welcome to the Next.js Firebase App</h1>
-      {message && <p className="mt-4">{message}</p>}
+    <div className="flex flex-col items-center justify-center h-screen">
+      <h1 className="text-2xl">Welcome to My Next.js App</h1>
+      <UserProfile /> {/* Display user info if signed in */}
+      <SignInButton />
     </div>
   );
 };
