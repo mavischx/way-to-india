@@ -1,6 +1,7 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import SignupForm from "../../components/auth/SignUpForm"
+import React from "react";
+//, { useEffect, useState } 
+import SignupForm from "../components/auth/SignUpForm"
 
 
 const LandingPage = () => {
