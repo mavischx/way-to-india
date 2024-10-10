@@ -19,7 +19,7 @@ const OTPVerification: React.FC<OTPVerificationProps> = ({ onVerify }) => {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [otp, setOtp] = useState('');
     const [loading, setLoading] = useState(false);
-    const [showOTP, setShowOTP] = useState(true);
+    const [showOTP, setShowOTP] = useState(false);
     const [verificationId, setVerificationId] = useState('');
     const router = useRouter();
 
