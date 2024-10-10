@@ -44,9 +44,11 @@ const SignupForm: React.FC<SignupFormProps> = ({ onSubmit, mode, onSwitchToLogin
         console.log(formData);
         // Handle the form submission logic (validation, API call, etc.)
         if (mode === 'signup') {
-            router.push('/auth/otp-verification');
+            // Redirect to /auth with a query parameter for OTP signup
+            router.push(`/auth?step=otp-signup`);
         } else if (mode === 'login') {
-            router.push('/'); // Redirect to user profile or landing page for login
+            // Redirect to the landing page for login
+            router.push('/');
         }
         onSubmit();
     };

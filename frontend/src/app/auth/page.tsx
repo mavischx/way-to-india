@@ -1,21 +1,32 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import SignupForm from "@/app/auth/SignUpForm";
 import OTPVerification from "@/app/auth/otp-verification";
 
 const AuthPage = () => {
     const [step, setStep] = useState<'signup' | 'login' | 'otp'>('signup');
     const router = useRouter();
+    const searchParams = useSearchParams();
     const [isMounted, setIsMounted] = useState(false); // State to track mounting status
 
     useEffect(() => {
+        const queryStep = searchParams.get('step'); // Access the 'step' query parameter
+
+        if (queryStep === 'otp-signup') {
+            setStep('otp'); // Set step to 'otp' based on query
+        }
+
+        if (queryStep === 'login') {
+            setStep('login'); // Set step to 'otp' based on query
+        }
+
         setIsMounted(true); // Component is mounted on client
-    }, []);
+    }, [searchParams]);
 
     const handleSignupSubmit = () => {
         setStep('otp'); // Update step to 'otp' after signup
-        router.push('/auth/otp-verification'); // Navigate to OTP verification
+        router.push(`/auth?step=otp-signup`); // Navigate to OTP verification
     };
 
     const handleLoginSubmit = () => {
