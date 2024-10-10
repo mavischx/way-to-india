@@ -3,14 +3,14 @@
 import React from "react";
 import { useAuth } from "../../context/AuthContext";
 import Image from 'next/image';
-import SignupForm from "@/app/components/auth/SignUpForm"
+import SignInPage from "@/app/auth/page"
 
 const UserProfile: React.FC = () => {
   const { user } = useAuth();
 
   if (!user) {
     return <div>
-      <SignupForm />
+      <SignInPage />
     </div>;
   }
 
