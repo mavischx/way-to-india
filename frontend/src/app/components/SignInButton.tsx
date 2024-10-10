@@ -65,6 +65,7 @@ const SignInButtonApple: React.FC = () => {
         height={24} />
       <span className="pl-2">Sign in with Apple</span>
     </button>
+    
 
   );
 };
