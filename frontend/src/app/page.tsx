@@ -1,5 +1,4 @@
 // app/page.tsx
-import '@/app/globals.css'
 import UserProfile from "./components/UserProfile";
 
 

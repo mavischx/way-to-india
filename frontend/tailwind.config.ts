@@ -11,6 +11,12 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "carrot-orange": "#FF8B02",
+        "milk-white": "#FFFFFF",
+        "heavy-metal": "#262626",
+      },
+      fontFamily: {
+        openSans: ["'Open Sans'", 'sans-serif'],
       },
       screens: {
         sm: "640px",
