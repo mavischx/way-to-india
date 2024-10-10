@@ -6,8 +6,9 @@ import HeroPage from "./general/Hero";
 const HomePage = () => {
   return (
     <div className="relative min-h-screen bg-white text-white">
-      {/* <UserProfile /> Display user info if signed in */}
-      <HeroPage />
+      <UserProfile />
+      {/* Display user info if signed in */}
+      {/* <HeroPage /> */}
     </div>
   );
 };
