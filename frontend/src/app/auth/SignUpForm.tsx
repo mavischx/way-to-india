@@ -80,7 +80,7 @@ const SignupForm: React.FC<SignupFormProps> = ({ onSubmit, mode, onSwitchToLogin
                                     />
                                 </div>
                             )}
-                            <div className="mb-8">
+                            <div className="mb-4">
                                 <label className="block text-gray-700 font-semibold">Email address</label>
                                 <input
                                     type="email"

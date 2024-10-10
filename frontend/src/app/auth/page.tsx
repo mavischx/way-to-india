@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import SignupForm from "@/app/auth/SignUpForm";
 import OTPVerification from "@/app/auth/otp-verification";
 
