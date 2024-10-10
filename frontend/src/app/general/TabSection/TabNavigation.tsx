@@ -19,7 +19,9 @@ const TabNavigation: React.FC<TabNavigationProps> = ({ tabs, onTabChange }) => {
             {tabs.map((tab) => (
                 <button
                     key={tab}
-                    className={`flex-1 p-4 text-center transition duration-300 ${activeTab === tab ? 'bg-white font-bold' : 'text-gray-600'
+                    className={`flex-1 p-4 text-center transition duration-300 ${activeTab === tab
+                        ? 'bg-white font-bold'
+                        : 'bg-heavy-metal opacity-80 text-milk-white' // Add opacity and background for non-active tabs
                         }`}
                     onClick={() => handleTabClick(tab)}
                 >

@@ -20,12 +20,17 @@ const HeroPage = () => {
                 className="z-0"
             />
 
-            {/* Heading text */}
-            <h2 className="absolute left-10 top-[40%] transform -translate-y-12 text-6xl font-bold z-20">
-                Come, Explore the incredible land
-            </h2>
-            <div>
-                <SearchSection />
+            {/* Content overlay */}
+            <div className="relative z-20 flex flex-col items-start justify-center h-full p-10">
+                {/* Heading text */}
+                <h2 className="text-6xl font-bold text-white mb-4">
+                    Come, Explore the incredible land
+                </h2>
+                <div className="m-4 w-full">
+                    <SearchSection />
+                </div>
+                {/* Search Section */}
+
             </div>
         </div>
     );

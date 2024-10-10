@@ -29,7 +29,7 @@ const SearchSection = () => {
     };
 
     return (
-        <div className="bg-white shadow-md p-4">
+        <div className="bg-white shadow-md text-heavy-metal rounded-3xl">
             <TabNavigation tabs={['Buy Hotels', 'Tours/Packages', 'Transportation']} onTabChange={setSelectedTab} />
             {selectedTab === 'Buy Hotels' && (
                 <div className="flex flex-col space-y-4">
