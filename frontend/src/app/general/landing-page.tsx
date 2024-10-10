@@ -1,24 +1,19 @@
 "use client";
 import React from "react";
 //, { useEffect, useState } 
-import SignupForm from "@/app/auth/SignUpForm"
+import HeroPage from "@/app/general/Hero"
 
 
 const LandingPage = () => {
     return (
         <div className="relative min-h-screen">
             <div className="fixed inset-0 z-0">
-                {/* <Canvas camera={{ position: [0, 0, 1] }}>
-                    <CloudParticleBg />
-                </Canvas> */}
-                {/* <SignupForm /> */}
-                Hello World
             </div>
 
             {/* Main contents */}
             <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
-                {/* <NavigationBar />
                 <HeroPage />
+                {/* <NavigationBar />
                 <JoinUsPage />
                 <SpaceAgencies />
                 <GlobalCollabrators />
