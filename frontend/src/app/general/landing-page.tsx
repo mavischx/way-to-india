@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 //, { useEffect, useState } 
-import SignupForm from "../components/auth/SignUpForm"
+import SignupForm from "@/app/auth/SignUpForm"
 
 
 const LandingPage = () => {
@@ -11,7 +11,7 @@ const LandingPage = () => {
                 {/* <Canvas camera={{ position: [0, 0, 1] }}>
                     <CloudParticleBg />
                 </Canvas> */}
-                <SignupForm />
+                {/* <SignupForm /> */}
                 Hello World
             </div>
 
