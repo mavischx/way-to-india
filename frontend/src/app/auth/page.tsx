@@ -5,7 +5,6 @@ import SignupForm from "@/app/auth/SignUpForm";
 import OTPVerification from "@/app/auth/otp-verification";
 
 const AuthPage = () => {
-    const pathname = usePathname();
     const [step, setStep] = useState<'signup' | 'login' | 'otp'>('signup');
     const router = useRouter();
     const [isMounted, setIsMounted] = useState(false); // State to track mounting status

@@ -19,6 +19,9 @@ const OTPVerification: React.FC<OTPVerificationProps> = ({ onVerify }) => {
             const confirmationResult = await signInWithPhoneNumber(auth, phoneNumber, recaptchaVerifier);
             setVerificationId(confirmationResult.verificationId);
             console.log('OTP sent!');
+
+            onVerify(); // Use the onVerify callback to indicate successful verification
+            // Redirect to your desired page after successful sign-in
         } catch (error) {
             console.error('Error sending OTP:', error);
         }
