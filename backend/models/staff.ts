@@ -4,7 +4,7 @@ export class StaffModel {
   phone: string;
   email: string;
   department: string;
-  constructor(obj) {
+  constructor(obj: StaffModel) {
     Object.assign(this, obj);
   }
 }

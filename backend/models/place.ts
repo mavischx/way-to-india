@@ -7,7 +7,7 @@ export class PlaceModel {
   photo_paths: Array<string>;
   state_id: number;
   city_id: number;
-  constructor(obj) {
+  constructor(obj: PlaceModel) {
     Object.assign(this, obj);
   }
 }

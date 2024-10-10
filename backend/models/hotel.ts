@@ -4,7 +4,7 @@ export class HotelModel {
   description: string;
   small_image_path: string;
   large_image_path: string;
-  hotel_type: number;  // Could be an enum of budget, standard, deluxe, luxury
+  hotel_type: number; // Could be an enum of budget, standard, deluxe, luxury
   large_image_paths: Array<string>;
   thumb_image_paths: Array<string>;
   rating: number;
@@ -16,7 +16,7 @@ export class HotelModel {
   food_type: Array<number>; // Ids with food types
   facilites: {}; // Dictionary of string and booleans
   facilites_image_path: string;
-  constructor(obj) {
+  constructor(obj: HotelModel) {
     Object.assign(this, obj);
   }
 }

@@ -1,9 +1,9 @@
 export class PaymentModel {
   payment_id: number;
   payment_time: number; // time stamp of payment
-  amount: int
+  amount: number;
 
-  constructor(obj) {
+  constructor(obj: PaymentModel) {
     Object.assign(this, obj);
   }
 }
