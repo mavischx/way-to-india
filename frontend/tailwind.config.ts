@@ -17,6 +17,7 @@ const config: Config = {
       },
       fontFamily: {
         openSans: ["'Open Sans'", 'sans-serif'],
+        limeLight: ["LimeLight", 'sans-serif'],
         lexend: ['Lexend', 'sans-serif']
       },
       screens: {

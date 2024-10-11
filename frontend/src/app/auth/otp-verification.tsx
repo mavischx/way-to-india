@@ -10,6 +10,7 @@ import toast from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import loginBackground from "@/assets/images/loginImage.png";
+import CircleLoader from '../components/CircleLoader';
 
 interface OTPVerificationProps {
     onVerify: () => void;
@@ -96,7 +97,7 @@ const OTPVerification: React.FC<OTPVerificationProps> = ({ onVerify }) => {
                                     className="w-full bg-carrot-orange text-white font-bold p-2 rounded-lg hover:bg-orange-600 transition duration-300"
                                     disabled={loading}
                                 >
-                                    {loading ? <div className='flex justify-center items-center'><CircleNotch size={24} className="animate-spin" /> </div> : 'Send OTP'}
+                                    {loading ? <CircleLoader /> : 'Send OTP'}
                                 </button>
                                 <div className="flex items-center justify-center my-8 w-full">
                                     <hr className="w-full text-gray-300" />
