@@ -2,6 +2,8 @@
 import React from "react";
 //, { useEffect, useState } 
 import HeroPage from "@/app/general/Hero"
+import Trending from "@/app/general/Trending";
+import NavBar from "../components/NavBar";
 
 
 const LandingPage = () => {
@@ -11,9 +13,11 @@ const LandingPage = () => {
             </div>
 
             {/* Main contents */}
-            <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
+            <div className="relative z-10">
+                <NavBar />
                 <HeroPage />
-                {/* <NavigationBar />
+                <Trending />
+                {/* 
                 <JoinUsPage />
                 <SpaceAgencies />
                 <GlobalCollabrators />

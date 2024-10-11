@@ -12,15 +12,15 @@ import Package from "./general/Package";
 const HomePage = () => {
   return (
     <div className="relative min-h-screen bg-white text-white">
-      <UserProfile />
+      {/* <UserProfile /> */}
       {/* Display user info if signed in */}
-      {/* <NavBar/> */}
-      {/* <HeroPage /> */}
-      {/* <Package/> */}
-      {/* <Trending/> */}
-      {/* <Inspiration/> */}
-      {/* <AirCharter/> */}
-      {/* <Deals/> */}
+      <NavBar /> *
+      <HeroPage />
+      <Package />
+      <Trending />
+      <Inspiration />
+      <AirCharter />
+      <Deals />
     </div>
   );
 };

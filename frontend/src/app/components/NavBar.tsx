@@ -12,12 +12,12 @@ const NavBar: React.FC = () => {
 
     return (
         <>
-        {/* Desktop view */}
+            {/* Desktop view */}
             <div className="MobileScreen:hidden TabletScreen:hidden flex flex-row items-center justify-between px-20 py-5">
                 <Image
                     // className="cursor-pointer"
                     src={WTIndiaLogo}
-                    width={150}
+                    width={250}
                     alt="Way to India Logo"
                 />
 
@@ -45,7 +45,7 @@ const NavBar: React.FC = () => {
 
                 </div>
                 <div className="flex">
-                    <Bell size={30} color="black"/>
+                    <Bell size={30} color="black" />
                     <div className="bg-[#FF8B02] rounded-full px-5 py-2 text-center font-medium ml-10 font-lexend cursor-pointer" onClick={() => Router.push("/")}>Sign Up/Login</div>
                 </div>
             </div>
