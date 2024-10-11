@@ -66,7 +66,7 @@ const Trending: React.FC = () => {
 
     return (
         <>
-            <div className="bg-[#FF8B02] flex justify-center items-center">
+            <div className="bg-[#FF8B02] flex justify-center items-center mb-10">
                 <div className="px-6 pb-10">
                     <div className="flex justify-between my-4">
                         <span className="text-3xl font-firaSans font-semibold">Trending Hotels and Stays</span>

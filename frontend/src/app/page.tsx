@@ -7,17 +7,20 @@ import Trending from "./general/Trending";
 import Inspiration from "./general/Inspiration";
 import AirCharter from "./general/AirCharterTour";
 import Deals from "./general/Deals";
+import Package from "./general/Package";
 
 const HomePage = () => {
   return (
     <div className="relative min-h-screen bg-white text-white">
-      {/* <UserProfile /> */}
+      <UserProfile />
       {/* Display user info if signed in */}
-      <HeroPage />
-      <Trending/>
-      <Inspiration/>
-      <AirCharter/>
-      <Deals/>
+      {/* <NavBar/> */}
+      {/* <HeroPage /> */}
+      {/* <Package/> */}
+      {/* <Trending/> */}
+      {/* <Inspiration/> */}
+      {/* <AirCharter/> */}
+      {/* <Deals/> */}
     </div>
   );
 };
