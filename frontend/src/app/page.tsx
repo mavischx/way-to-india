@@ -11,7 +11,7 @@ const HomePage = () => {
       <UserProfile />
       {/* Display user info if signed in */}
       {/* <HeroPage /> */}
-      {/* <Trending/> */}
+      <Trending/>
     </div>
   );
 };
