@@ -4,8 +4,8 @@ import React from "react";
 import Image from 'next/image';
 import { auth } from "../../lib/firebase"; // Adjust the path as needed
 import { GoogleAuthProvider, OAuthProvider, signInWithPopup } from "firebase/auth";
-import AppleIcon from "@/assets/images/apple-logo.png";
-import GoogleIcon from "@/assets/images/google.png";
+import AppleIcon from "@/assets/icons/apple-logo.png";
+import GoogleIcon from "@/assets/icons/google.png";
 
 const SignInButtonGoogle: React.FC = () => {
   const googleProvider = new GoogleAuthProvider();
@@ -65,7 +65,7 @@ const SignInButtonApple: React.FC = () => {
         height={24} />
       <span className="pl-2">Sign in with Apple</span>
     </button>
-    
+
 
   );
 };

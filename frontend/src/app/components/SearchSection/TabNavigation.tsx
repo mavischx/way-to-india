@@ -15,13 +15,13 @@ const TabNavigation: React.FC<TabNavigationProps> = ({ tabs, onTabChange }) => {
     };
 
     return (
-        <div className="flex border-b border-gray-300">
+        <div className="flex">
             {tabs.map((tab) => (
                 <button
                     key={tab}
-                    className={`flex-1 p-4 text-center transition duration-300 ${activeTab === tab
-                        ? 'bg-white font-bold'
-                        : 'bg-heavy-metal opacity-80 text-milk-white' // Add opacity and background for non-active tabs
+                    className={`rounded-t-2xl flex px-4 py-8 text-center transition duration-300 ${activeTab === tab
+                        ? 'bg-milk-white font-bold'
+                        : 'bg-heavy-metal opacity-10 text-milk-white' // Add opacity and background for non-active tabs
                         }`}
                     onClick={() => handleTabClick(tab)}
                 >

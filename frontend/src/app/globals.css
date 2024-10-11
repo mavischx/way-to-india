@@ -27,9 +27,19 @@ body {
 }
 
 @font-face {
-  font-family: 'Lexend'; /* Name of the font */
-  src: url('../app/fonts/Lexend-Regular.woff2') format('woff2'),  /* WOFF2 for modern browsers */
-       url('../app/fonts/Lexend-Regular.woff') format('woff');    /* WOFF for older browsers */
+  font-family: 'LimeLight';
+  src: url('../app/fonts/Limelight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  /* Name of the font */
+  src: url('../app/fonts/Lexend-Regular.woff2') format('woff2'),
+    /* WOFF2 for modern browsers */
+    url('../app/fonts/Lexend-Regular.woff') format('woff');
+  /* WOFF for older browsers */
   font-weight: 400;
   font-style: normal;
 }

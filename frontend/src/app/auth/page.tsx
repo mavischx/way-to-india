@@ -3,6 +3,7 @@ import React, { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import SignupForm from "@/app/auth/SignUpForm";
 import OTPVerification from "@/app/auth/otp-verification";
+import CircleLoader from '../components/CircleLoader';
 
 // Create a component to handle Auth logic
 const AuthLogic = () => {
@@ -64,7 +65,7 @@ const AuthLogic = () => {
 // Main AuthPage component
 const AuthPage = () => {
     return (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<CircleLoader />}>
             <AuthLogic />
         </Suspense>
     );

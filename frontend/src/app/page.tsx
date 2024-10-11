@@ -8,8 +8,7 @@ import Trending from "./general/Trending";
 const HomePage = () => {
   return (
     <div className="relative min-h-screen bg-white text-white">
-      {/* <NavBar/> */}
-      {/* <UserProfile /> */}
+      <UserProfile />
       {/* Display user info if signed in */}
       {/* <HeroPage /> */}
       <Trending/>
