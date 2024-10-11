@@ -4,14 +4,20 @@ import UserProfile from "./components/UserProfile";
 import LandingPage from "./general/landing-page";
 import HeroPage from "./general/Hero";
 import Trending from "./general/Trending";
+import Inspiration from "./general/Inspiration";
+import AirCharter from "./general/AirCharterTour";
+import Deals from "./general/Deals";
 
 const HomePage = () => {
   return (
     <div className="relative min-h-screen bg-white text-white">
-      <UserProfile />
+      {/* <UserProfile /> */}
       {/* Display user info if signed in */}
-      {/* <HeroPage /> */}
+      <HeroPage />
       <Trending/>
+      <Inspiration/>
+      <AirCharter/>
+      <Deals/>
     </div>
   );
 };
