@@ -8,7 +8,7 @@ const firebaseConfig = {
   storageBucket: "way-to-india-3cd13.appspot.com",
   messagingSenderId: "914232026496",
   appId: "1:914232026496:web:456d7677af7888206e4d65",
-  measurementId: "G-4JRZKECVEH
+  measurementId: "G-4JRZKECVEH"
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
