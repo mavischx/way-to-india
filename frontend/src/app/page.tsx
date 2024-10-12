@@ -14,13 +14,7 @@ const HomePage = () => {
     <div className="relative min-h-screen bg-white text-white">
       {/* <UserProfile /> */}
       {/* Display user info if signed in */}
-      <NavBar /> *
-      <HeroPage />
-      <Package />
-      <Trending />
-      <Inspiration />
-      <AirCharter />
-      <Deals />
+      <LandingPage />
     </div>
   );
 };

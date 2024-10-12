@@ -46,7 +46,7 @@ const NavBar: React.FC = () => {
                 </div>
                 <div className="flex">
                     <Bell size={30} color="black" />
-                    <div className="bg-[#FF8B02] rounded-full px-5 py-2 text-center font-medium ml-10 font-lexend cursor-pointer" onClick={() => Router.push("/")}>Sign Up/Login</div>
+                    <div className="bg-[#FF8B02] rounded-full px-5 py-2 text-center font-medium ml-10 font-lexend cursor-pointer" onClick={() => Router.push("/auth")}>Sign Up/Login</div>
                 </div>
             </div>
 

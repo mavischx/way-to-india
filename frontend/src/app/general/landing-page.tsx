@@ -4,29 +4,24 @@ import React from "react";
 import HeroPage from "@/app/general/Hero"
 import Trending from "@/app/general/Trending";
 import NavBar from "../components/NavBar";
+import Deals from "./Deals";
+import Inspiration from "./Inspiration";
+import AirCharter from "./AirCharterTour";
+import Package from "./Package";
 
 
 const LandingPage = () => {
     return (
         <div className="relative min-h-screen">
-            <div className="fixed inset-0 z-0">
-            </div>
-
             {/* Main contents */}
             <div className="relative z-10">
                 <NavBar />
                 <HeroPage />
+                <Package />
                 <Trending />
-                {/* 
-                <JoinUsPage />
-                <SpaceAgencies />
-                <GlobalCollabrators />
-                <Shannon />
-                <TeamStories />
-                <HackathoneTimeline />
-                <Socials />
-                <BackToTopButton />
-                <Footer /> */}
+                <Inspiration />
+                <AirCharter />
+                <Deals />
             </div>
         </div>
     );
