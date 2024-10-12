@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Image from "next/image"
 import IndianHeritage from "@/assets/images/indian_building_scene.png"
-import SearchSection from "./SearchSection/SearchSection";
+import SearchSection from "@/app/general/SearchSection";
 
 const HeroPage = () => {
     return (
