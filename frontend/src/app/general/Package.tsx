@@ -76,7 +76,7 @@ const Package: React.FC = () => {
                             </div>
 
                             <div className="flex justify-between items-center px-5 pb-5"> {/* Button section */}
-                                <a className="bg-[#FF8B02] rounded-full px-5 py-2 text-center font-semibold text-sm" href="/">
+                                <a className="bg-[#FF8B02] rounded-full px-5 py-2 text-center font-semibold text-sm" href="/details">
                                     Explore Similar
                                 </a>
                                 <a className="flex" href={card.url}>
