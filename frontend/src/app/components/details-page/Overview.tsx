@@ -3,11 +3,21 @@ import React, { useState } from 'react';
 import Star from '@/assets/icons/Star.png';
 import Image from 'next/image';
 import { Clock, HandPeace, Heart, MapPin } from '@phosphor-icons/react';
+import { Button } from '@mui/material';
+import Export from '@/assets/icons/Export.png'
 
 const Overview = () => {
     return (
         <div className='max-w-full ml-4 px-4'>
-            <h1 className="text-4xl font-bold text-carrot-orange mb-2">Valley of Flowers</h1>
+            <div className='w-full block inline-flex justify-between'>
+                <h1 className="text-4xl font-bold text-carrot-orange mb-2">Valley of Flowers</h1>
+                <Button
+                    className='bg-carrot-orange rounded-xl'
+                >
+                    <Image src={Export} alt={'Export'} width={32} height={32} />
+                </Button>
+            </div>
+
             <div className="flex flex-wrap items-center my-4">
                 <div className='rounded-xl border-2 border-carrot-orange px-1'>
                     <span className="text-carrot-orange text-md font-[500] mr-2">Trekking Tours in India</span>
