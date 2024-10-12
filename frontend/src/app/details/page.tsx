@@ -10,7 +10,7 @@ import NavBar from '../components/NavBar';
 const DetailsPage = () => {
     const [selectedTab, setSelectedTab] = useState(0);
 
-    const handleTabChange = (event: React.ChangeEvent<{}>, newValue: number) => {
+    const handleTabChange = (event: React.ChangeEvent<HTMLElement>, newValue: number) => {
         setSelectedTab(newValue);
     };
 

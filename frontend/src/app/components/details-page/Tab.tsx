@@ -12,7 +12,7 @@ import Reviews from './Reviews';
 const TabSection = () => {
     const [selectedTab, setSelectedTab] = useState(0);
 
-    const handleTabChange = (event: React.ChangeEvent<{}>, newValue: number) => {
+    const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
         setSelectedTab(newValue);
     };
 
