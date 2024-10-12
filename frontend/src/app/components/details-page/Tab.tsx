@@ -1,6 +1,6 @@
 // components/DetailsPage.tsx
-import React, { useState } from 'react';
-import { Tabs, Tab } from '@mui/material'; // Material UI for tabs if you prefer
+import React, { useRef, useState } from 'react';
+import { Tabs, Tab, Box } from '@mui/material'; // Material UI for tabs if you prefer
 import Itinerary from './Itinerary';
 import HotelDetails from './HotelDetails';
 import TransportationDetails from './TransportationDetails';
@@ -11,34 +11,67 @@ import Reviews from './Reviews';
 
 const TabSection = () => {
     const [selectedTab, setSelectedTab] = useState(0);
+    const itineraryRef = useRef<HTMLDivElement>(null);
+    const hotelRef = useRef<HTMLDivElement>(null);
+    const transportationRef = useRef<HTMLDivElement>(null);
+    const inclusionsRef = useRef<HTMLDivElement>(null);
+    const faqsRef = useRef<HTMLDivElement>(null);
+    const bookingPolicyRef = useRef<HTMLDivElement>(null);
+    const reviewsRef = useRef<HTMLDivElement>(null);
 
-    const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
-        setSelectedTab(newValue);
+    const handleScroll = (ref: React.RefObject<HTMLDivElement>, index: number) => {
+        if (ref.current) {
+            ref.current.scrollIntoView({ behavior: 'smooth' });
+            setSelectedTab(index);
+        }
     };
 
     return (
-        <div className="mt-8">
-            <Tabs value={selectedTab} onChange={handleTabChange}>
-                <Tab label="Itinerary Details" />
-                <Tab label="Hotel Details" />
-                <Tab label="Transportation Details" />
-                <Tab label="Inclusions & Exclusions" />
-                <Tab label="General FAQ's" />
-                <Tab label="Booking Policy" />
-                <Tab label="Reviews" />
-            </Tabs>
-
-            {/* Conditionally render tab content based on selectedTab */}
+        <>
+            <Box className="my-12" sx={{ boxShadow: 3, borderRadius: 2, p: 2, }}>
+                <Tabs>
+                    {[
+                        { label: "Itinerary Details", ref: itineraryRef },
+                        { label: "Hotel Details", ref: hotelRef },
+                        { label: "Transportation Details", ref: transportationRef },
+                        { label: "Inclusions & Exclusions", ref: inclusionsRef },
+                        { label: "General FAQ's", ref: faqsRef },
+                        { label: "Booking Policy", ref: bookingPolicyRef },
+                        { label: "Reviews", ref: reviewsRef },
+                    ].map((tab, index) => (
+                        <Tab
+                            className="font-bold"
+                            key={index}
+                            label={tab.label}
+                            onClick={() => handleScroll(tab.ref, index)}
+                            sx={{
+                                borderRadius: '8px', // Make selected tab rounded
+                                backgroundColor: selectedTab === index ? '#FF8C00' : 'transparent', // Darker carrot-orange for selected tab
+                                color: selectedTab === index ? '#FFFFFF' : '#FF8B02', // Text color for selected vs unselected
+                                transition: 'background-color 0.3s, color 0.3s', // Smooth transition for background and text color
+                                padding: '12px 24px', // Padding for a button-like appearance
+                                '&:hover': {
+                                    backgroundColor: selectedTab === index ? '#FF8C00' : '#FFD700', // Change on hover
+                                    color: selectedTab === index ? '#FFFFFF' : '#FF8B02', // Ensure hover text color remains consistent
+                                },
+                            }}
+                        />
+                    ))}
+                </Tabs>
+            </Box>
+            {/* Section contents with refs */}
             <div className="mt-4">
-                {selectedTab === 0 && <Itinerary />}
-                {selectedTab === 1 && <HotelDetails />}
-                {selectedTab === 2 && <TransportationDetails />}
-                {selectedTab === 3 && <InclusionsExclusions />}
-                {selectedTab === 4 && <FAQs />}
-                {selectedTab === 5 && <BookingPolicy />}
-                {selectedTab === 6 && <Reviews />}
+                <div ref={itineraryRef}><Itinerary /></div>
+                <div ref={hotelRef}><HotelDetails /></div>
+                <div ref={transportationRef}><TransportationDetails /></div>
+                <div ref={inclusionsRef}><InclusionsExclusions /></div>
+                <div ref={faqsRef}><FAQs /></div>
+                <div ref={bookingPolicyRef}><BookingPolicy /></div>
+                <div ref={reviewsRef}><Reviews /></div>
             </div>
-        </div>
+        </>
+
+
     );
 };
 
