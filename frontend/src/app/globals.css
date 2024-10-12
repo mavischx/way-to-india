@@ -20,6 +20,11 @@ body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
+.Mui-selected {
+  color: #FFFFFF !important;
+  /* Use !important to ensure it overrides the default */
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
