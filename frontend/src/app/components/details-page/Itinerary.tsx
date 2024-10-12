@@ -17,14 +17,18 @@ const Itinerary = () => {
                     <Typography>{`Day ${item.day}`}</Typography>
 
                     <AccordionDetails>
-                        <Typography>{item.title}</Typography> //m
-                        <Typography>
-                            <p>{item.description}</p>
-                            <p className="font-semibold">Overnight Stay: {item.overnightStay}</p>
-                            {item.trekDistance && <p>Trek Distance: {item.trekDistance}</p>}
-                            {item.trekTime && <p>Trek Time: {item.trekTime}</p>}
-                            {item.trekDifficulty && <p>Trek Difficulty: {item.trekDifficulty}</p>}
-                        </Typography>
+                        <Typography variant="h6">{item.title}</Typography>
+                        <Typography variant="body1">{item.description}</Typography>
+                        <Typography variant="body1" className="font-semibold">Overnight Stay: {item.overnightStay}</Typography>
+                        {item.trekDistance && (
+                            <Typography variant="body2">Trek Distance: {item.trekDistance}</Typography>
+                        )}
+                        {item.trekTime && (
+                            <Typography variant="body2">Trek Time: {item.trekTime}</Typography>
+                        )}
+                        {item.trekDifficulty && (
+                            <Typography variant="body2">Trek Difficulty: {item.trekDifficulty}</Typography>
+                        )}
                     </AccordionDetails>
                 </Accordion>
             ))}
