@@ -8,6 +8,7 @@ import Deals from "./Deals";
 import Inspiration from "./Inspiration";
 import AirCharter from "./AirCharterTour";
 import Package from "./Package";
+import DetailsPage from "../details/page";
 
 
 const LandingPage = () => {
@@ -15,13 +16,14 @@ const LandingPage = () => {
         <div className="relative min-h-screen">
             {/* Main contents */}
             <div className="relative z-10">
-                <NavBar />
+                {/* <NavBar />
                 <HeroPage />
                 <Package />
                 <Trending />
                 <Inspiration />
                 <AirCharter />
-                <Deals />
+                <Deals /> */}
+                <DetailsPage/>
             </div>
         </div>
     );

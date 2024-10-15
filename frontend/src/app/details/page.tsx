@@ -15,7 +15,7 @@ const DetailsPage = () => {
     };
 
     return (
-        <section className='relative min-h-screen'>
+        <section className='relative min-h-screen text-black'>
             <NavBar />
             <div className="container mx-auto py-4 px-[5%] mt-4">
                 {/* Breadcrumb Navigation */}

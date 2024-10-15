@@ -60,14 +60,23 @@ const TabSection = () => {
                 </Tabs>
             </Box>
             {/* Section contents with refs */}
-            <div className="mt-4">
-                <div ref={itineraryRef}><Itinerary /></div>
-                <div ref={hotelRef}><HotelDetails /></div>
-                <div ref={transportationRef}><TransportationDetails /></div>
-                <div ref={inclusionsRef}><InclusionsExclusions /></div>
-                <div ref={faqsRef}><FAQs /></div>
-                <div ref={bookingPolicyRef}><BookingPolicy /></div>
-                <div ref={reviewsRef}><Reviews /></div>
+            {/* <div className="mt-4 grid grid-cols-12 gap-2 text-black">
+                <div ref={itineraryRef} className='col-span-9'><Itinerary /></div>
+                <div ref={hotelRef} className='col-span-9'><HotelDetails /></div>
+                <div ref={transportationRef} className='col-span-9'><TransportationDetails /></div>
+                <div ref={inclusionsRef} className='col-span-12'><InclusionsExclusions /></div>
+                <div ref={faqsRef} className='col-span-12'><FAQs /></div>
+                <div ref={bookingPolicyRef} className='col-span-12'><BookingPolicy /></div>
+                <div ref={reviewsRef} className='col-span-3'><Reviews /></div>
+            </div> */}
+             <div className="mt-4">
+                <div ref={itineraryRef} className=''><Itinerary /></div>
+                {/* <div ref={hotelRef} className=''><HotelDetails /></div>
+                <div ref={transportationRef} className=''><TransportationDetails /></div> */}
+                <div ref={inclusionsRef} className=''><InclusionsExclusions /></div>
+                <div ref={faqsRef} className=''><FAQs /></div>
+                <div ref={bookingPolicyRef} className=''><BookingPolicy /></div>
+                <div ref={reviewsRef} className=''><Reviews /></div>
             </div>
         </>
 
