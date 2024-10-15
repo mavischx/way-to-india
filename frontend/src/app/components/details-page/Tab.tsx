@@ -70,6 +70,7 @@ const TabSection = () => {
                 <div ref={reviewsRef} className='col-span-3'><Reviews /></div>
             </div> */}
              <div className="mt-4">
+                <div className='text-3xl font-firaSans font-semibold mb-2'>Hotel Details</div>
                 <div ref={itineraryRef} className=''><Itinerary /></div>
                 {/* <div ref={hotelRef} className=''><HotelDetails /></div>
                 <div ref={transportationRef} className=''><TransportationDetails /></div> */}

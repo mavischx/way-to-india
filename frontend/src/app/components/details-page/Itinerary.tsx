@@ -99,7 +99,13 @@ const Itinerary = () => {
                 
 
                 <div className='col-span-2'>
-                
+                <div className='border border-gray-200 rounded-lg p-2 my-1'>
+                    <div className='font-bold text-xs  my-1'>TRIP PRICE</div>
+                    <div className='text-sm font-bold text-[#FF8B02]  my-1'>6500 per person</div>
+                    <div className='text-xs  my-1'>Excluding applicable taxes</div>
+                    <div className=' p-2 cursor-pointer rounded-md flex items-center justify-center bg-[#FF8B02] text-white font-bold '>Book Now</div>
+
+                </div>
                 </div>
             </div>
 
